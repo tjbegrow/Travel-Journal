@@ -8,13 +8,13 @@ function App() {
   const cardData = JSON.parse(JSON.stringify(journalEntries));
 
   function displayCards() {
-    return cardData.map(element => (
-       <Card id={element.id} 
-        key={element.id}
-        pic={element.picture} 
-        place={element.place} 
-        date={element.date} 
-        description={element.description}
+    return cardData.map(entry => (
+       <Card id={entry.id} 
+        key={entry.id}
+        pic={entry.picture} 
+        place={entry.place} 
+        date={entry.date} 
+        description={entry.description}
       />
     ));
   }
