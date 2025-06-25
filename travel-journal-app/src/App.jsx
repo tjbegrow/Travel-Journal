@@ -1,25 +1,30 @@
 import { useState } from 'react'
 import './App.css'
-import TokyoTower from './assets/TokyoTower.jpeg'
+import journalEntries from './journal-entries.json'
+import Card from './components/Card'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const cardData = JSON.parse(JSON.stringify(journalEntries));
+
+  function displayCards() {
+    return cardData.map(element => (
+       <Card id={element.id} 
+        key={element.id}
+        pic={element.picture} 
+        place={element.place} 
+        date={element.date} 
+        description={element.description}
+      />
+    ));
+  }
 
   return (
     <main>
       <header>
         <h1>My Japanese Trip</h1>
       </header>
-      <section className="location-card">
-        <div className="img-container">
-          <img className="card-img" src={TokyoTower}/>
-        </div>
-        <div className="description-container">
-          <h2>Tokyo Tower</h2>
-          <p id="date">2025年4月3日</p>
-          <p>p</p>
-        </div>
-      </section>
+      {displayCards()}
     </main>
   )
 }
