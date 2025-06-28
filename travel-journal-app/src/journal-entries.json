@@ -3,7 +3,18 @@
         "id": 0,
         "picture": "./TokyoTower.jpeg",
         "place": "Tokyo Tower",
+        "location": "Minato City",
+        "googleMapsLink": "https://maps.app.goo.gl/P176iiJPzv9f8kQh8",
         "date": "2025年4月3日",
         "description": "I walked so much this day that I'm pretty sure that 90% of my day was walking. It didn't matter that it was raining at all I was just so excited to be in Japan and that I would go up into Tokyo Tower. Also, I went to CoCo Ichibayna for the first time. All I can say is the カレーライス was far better than anything I could have made at home. The inspiration has stayed with me and now I'm on a quest to make the best カレーライス!" 
+    },
+    {
+        "id": 1,
+        "picture": "./HakonePeaceGate.jpeg",
+        "place": "Hakone Shrine",
+        "location": "Motohakone",
+        "googleMapsLink": "https://maps.app.goo.gl/1yU45kQJUkRzAtTx6",
+        "date": "2025年4月6日",
+        "description": "The Journey to Hakone was a relaxing one. I took the Romance Train from Shinjuku station in Tokyo to Odwara Station. The seasonal bento I bought was very good. After reaching station, I took the bus the rest of the way to Lake Ashi. Once I checked into my hotel, I took the pirate ship across the lake to the other side. It was quite fun. The weather wasn't great, but I was just glad to be there. I made it to the Peace Torii at about 3pm after getting mochi and tea at Amazake Chaya." 
     }
 ]

@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import journalEntries from './journal-entries.json'
 import Card from './components/Card'
+import Menu from './components/Menu'
 
 function App() {
 
@@ -13,6 +14,8 @@ function App() {
         key={entry.id}
         pic={entry.picture} 
         place={entry.place} 
+        location={entry.location}
+        googleMapsLink={entry.googleMapsLink}
         date={entry.date} 
         description={entry.description}
       />
@@ -22,9 +25,11 @@ function App() {
   return (
     <main>
       <header>
-        <h1>My Japanese Trip</h1>
+        <Menu />
       </header>
-      {displayCards()}
+      <div className="container">
+        {displayCards()}
+      </div>
     </main>
   )
 }

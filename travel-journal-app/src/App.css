@@ -1,33 +1,66 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=IBM+Plex+Sans+JP&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=WDXL+Lubrifont+SC&family=Zen+Antique+Soft&display=swap');
 
+h1 {
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 3rem;
+}
+
 .card-img {
-  max-width: 100%;
-  
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
 }
 
 .location-card {
   display: flex;
-  /* background-color: aqua; */
   justify-content: center;
   max-width: 600px;
-  margin: auto;
   border-radius: 50px;
   overflow: hidden;
+  width: 100%;
   gap: 5px;
+  
 }
 
 .img-container {
-  background-color: white;
   flex: 1;
-  text-align: center;
-  
 }
+
 .description-container {
-  background-color: lightgray;
   flex: 1;
-  padding-left: 10px;
-  
+  background-color: lightgray;
+}
+
+#location {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px
+}
+
+#meta-data {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 20px
+}
+
+#pin {
+  color: red;
 }
 
 #date {
@@ -35,20 +68,44 @@
   font-weight: 200;
   font-style: normal; 
   font-size: 0.875rem;
+  margin-right: 20px;
 }
+
+
 
 #description {
   font-family: "Zen Antique Soft", serif;
   font-weight: 200;
   font-style: normal;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 h2 {
   padding: 0px;
-  margin: 0px;
+  margin: 5px;
   font-family: "Dosis", sans-serif;
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+header > div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#menu-graphic {
+  width: 100px
+}
+
+header {
+  margin-bottom: 3rem;
+}
+header > div > hr {
+  max-width: 600px;
+  width: 50%
 }
